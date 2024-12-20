@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+}
+
+*{
+    margin: 1;
+    padding: 0;
+}
+nav{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul li{
+    padding-right: 12px;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.Logo img{
+    width: 44px;
+    padding-right: 8px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.Bottom{
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 70px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin: 23px auto;
+    width: 80%;
+    padding: 34px;
+    background-image: url(bg.jpg);
+    background-size: cover; /* Scale the image to cover the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+.songlist {
+    display: flex;
+    flex-direction: column; /* Ensures songs stack vertically */
+    gap: 15px; /* Adds spacing between song items */
+}
+#songBar{
+    width: 40vw;
+    cursor: pointer;
+}
+.icons
+{
+    cursor: pointer;    
+}
+.SongsItem {
+    height: 60px;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Ensures even spacing between elements */
+    width: 40%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px; /* Adds some internal spacing */
+    margin-bottom: 15px; /* Adds spacing between song items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for aesthetics */
+}
+
+.SongsItem img {
+    width: 43px;
+    height: 43px; /* Ensures the image remains square */
+    margin: 0 13px;
+    border-radius: 5px; /* Adds a slight curve to the image corners */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+
+.SongsItem span {
+    flex-grow: 1; /* Allows the text to take up remaining space */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 500; /* Makes text slightly bolder for readability */
+}
+
+.SongsItem .songplay {
+    display: flex;
+    align-items: center; /* Centers the timestamp and play icon vertically */
+    gap: 10px; /* Adds spacing between timestamp and icon */
+}
+
+.SongsItem .timeStamp {
+    font-size: 14px; /* Slightly smaller font for the timestamp */
+    color: white; /* Makes the timestamp stand out */
+}
+
+.SongsItem i {
+    font-size: 20px; /* Adjusts the size of the play icon */
+    color: white; /* Matches the timestamp color */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.SongsItem i:hover {
+    transform: scale(1.2); /* Enlarges the icon slightly on hover */
+    color: black; /* Changes the icon color on hover */
+}

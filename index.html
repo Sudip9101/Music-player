@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="Logo"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav> 
+    
+    <div class="container"> 
+        <div class="songlist">
+            <h1>Current Playlist</h1>
+            <div class="SongsItem">
+                <img src="covers/1.jpg" alt="1">
+                <span>Let me love you</span>
+                <span class="songplay">
+                    <span class="timeStamp">05:34</span>
+                    <i class="fa-solid fa-play songItemplay"></i>
+                </span>
+            </div>
+            <div class="SongsItem">
+                <img src="covers/2.jpg" alt="2">
+                <span>Hold my hand</span>
+                <span class="songplay">
+                    <span class="timeStamp">01:21</span>
+                    <i class="fa-solid fa-play songItemplay"></i>
+                </span>
+            </div>
+            <div class="SongsItem">
+                <img src="covers/3.jpg" alt="3">
+                <span>Country road</span>
+                <span class="songplay">
+                    <span class="timeStamp">04:15</span>
+                    <i class="fa-solid fa-play songItemplay"></i>
+                </span>
+            </div>
+            <div class="SongsItem">
+                <img src="covers/4.jpg" alt="4">
+                <span>Summer</span>
+                <span class="songplay">
+                    <span class="timeStamp">05:08</span>
+                    <i class="fa-solid fa-play songItemplay"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="Bottom">
+        <input type="range" name="Range" id="songBar" min="0" max="100"> 
+        <div class="icons">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play" id="masterplay"></i>
+            <i class="fa-solid fa-forward"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b36d38310d.js" crossorigin="anonymous"></script>
+</body>
+</html>
